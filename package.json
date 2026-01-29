@@ -1,0 +1,31 @@
+{
+  "name": "vulnerable-transitive-app",
+  "version": "1.0.0",
+  "description": "Sample app with vulnerable transitive dependencies for testing remediation agents",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "audit": "npm audit",
+    "audit-json": "npm audit --json > audit-report.json"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "body-parser": "1.19.0",
+    "ejs": "3.1.6",
+    "axios": "0.21.1",
+    "jsonwebtoken": "8.5.1",
+    "dotenv": "8.2.0"
+  },
+  "devDependencies": {
+    "webpack": "4.46.0",
+    "webpack-cli": "3.3.12"
+  },
+  "keywords": [
+    "vulnerable",
+    "testing",
+    "security",
+    "transitive-dependencies"
+  ],
+  "author": "Test",
+  "license": "MIT"
+}
