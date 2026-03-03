@@ -27,5 +27,8 @@
     "transitive-dependencies"
   ],
   "author": "Test",
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "qs": "6.11.0"
+  }
 }
