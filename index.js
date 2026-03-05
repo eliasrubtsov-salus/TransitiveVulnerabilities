@@ -18,9 +18,6 @@ app.set('view engine', 'ejs');
 // JWT secret (intentionally weak for demo)
 const JWT_SECRET = process.env.JWT_SECRET || 'weak-secret';
 
-// OpenAI key
-const OpenAI_API_key = "sk-2jkn438u3y58fuchsifduvy834uhfwjrnc834y9cnwddan9u34ey9"
-
 // Route 1: User authentication with JWT
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
