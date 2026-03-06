@@ -11,10 +11,10 @@
   "dependencies": {
     "dotenv": "8.2.0",
     "ejs": "3.1.10",
-    "axios": "1.13.5",
     "jsonwebtoken": "9.0.0",
     "express": "4.20.0",
-    "body-parser": "1.20.3"
+    "body-parser": "1.20.3",
+    "axios": "1.8.2"
   },
   "devDependencies": {
     "webpack": "4.46.0",
