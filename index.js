@@ -27,7 +27,6 @@ app.post('/login', (req, res) => {
     
     // Simplified authentication (not secure, for demo only)
     if (username && password) {
-        JWT_SECRET = "my_secret_123445677"
         const token = jwt.sign({ username }, JWT_SECRET, { expiresIn: '1h' });
         res.json({ token });
     } else {
@@ -44,7 +43,6 @@ app.get('/protected', (req, res) => {
     }
     
     try {
-        JWT_SECRET = "my_secret_123445677"
         const decoded = jwt.verify(token, JWT_SECRET);
         res.json({ message: 'Access granted', user: decoded });
     } catch (error) {
